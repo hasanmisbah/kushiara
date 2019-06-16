@@ -18,6 +18,10 @@
       <link href="assets/css/magnific-popup.css" rel="stylesheet">
       <!-- Owl Carousel Css -->
       <link href="assets/css/owl.carousel.css" rel="stylesheet">
+       <!-- animate Css -->
+      <link href="assets/css/animate.css" rel="stylesheet">
+       <!-- jpages Css -->
+      <link href="assets/css/jpages.css" rel="stylesheet">
       <!-- Main Css -->
       <link href="assets/css/style.css" rel="stylesheet">
       <!-- Responsive Css -->
@@ -38,7 +42,7 @@
                         <ul class="navbar-nav ml-auto">
                            <li class="current"><a href="index.php">Home</a></li>
                            <li class=""><a href="about.php">About Us</a></li>
-                           <li><a href="#">Products</a></li>
+                           <li><a href="product.php">Products</a></li>
                            <li><a href="gallery.php">Gallery</a></li>
                            <li><a href="contact.php">Contact Us</a></li>
                         </ul>

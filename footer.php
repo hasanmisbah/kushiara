@@ -28,7 +28,7 @@
                      <ul>
                         <li><a href="index.php">Home</a></li>
                         <li><a href="about.php">About Us</a></li>
-                        <li><a href="faq.php">Products</a></li>
+                        <li><a href="product.php">Products</a></li>
                         <li><a href="gallery.php">Gallery</a></li>
                         <li><a href="contact.php">Contact Us</a></li>
                      </ul>
@@ -69,6 +69,8 @@
       <script src="assets/js/popper.min.js"></script>
       <!-- Bootstrap JS -->
       <script src="assets/js/bootstrap.min.js"></script>
+        <!-- jquery lazy load JS -->
+        <script src="assets/js/jquery.lazyload.js"></script>
       <!-- Owl Carousel JS -->
       <script src="assets/js/owl.carousel.min.js"></script>
       <!-- Manific Popup JS -->
@@ -81,6 +83,9 @@
       <script src="assets/js/imageloaded.min.js"></script>
 	  <!-- Waypoint JS -->
       <script src="assets/js/waypoint.min.js"></script>
+
+	  <!-- jquery lazy load JS -->
+      <script src="assets/js/jPages.min.js"></script>
       <!-- Main JS -->
       <script src="assets/js/main.js"></script>
    </body>

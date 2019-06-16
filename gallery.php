@@ -1,4 +1,11 @@
-<?php include('header.php');?>
+<?php
+
+$title = 'Gallery';
+$slogan = 'Kushiara Seeds';
+include('header.php');
+$data = json_decode(file_get_contents('database.json'), true);
+$images = $data['gallery'];
+?>
       <!-- Breadcumb Area Start -->
 	  <section class="breadcumb">
 		<div class="container">
@@ -27,96 +34,18 @@
                </div>
             </div>
             <div class="row">
-               <div class="col-xl-4">
-				  <div class="single-portfolio">
-                     <img src="assets/img/projects/01.jpg" alt="">
-                     <div class="portfolio-hover">
-                        <div class="portfolio-content">
-                           <h3><a href="assets/img/projects/01.jpg" class="gallery"><i class="fa fa-plus"></i> image name </a></h3>
-                        </div>
-                     </div>
-                  </div>
-			   </div>
-               <div class="col-xl-4">
-				  <div class="single-portfolio">
-                     <img src="assets/img/projects/02.jpg" alt="">
-                     <div class="portfolio-hover">
-                        <div class="portfolio-content">
-                           <h3><a href="assets/img/projects/02.jpg" class="gallery"><i class="fa fa-plus"></i> image name </a></h3>
-                        </div>
-                     </div>
-                  </div>
-			   </div>
-               <div class="col-xl-4">
-				  <div class="single-portfolio">
-                     <img src="assets/img/projects/03.jpg" alt="">
-                     <div class="portfolio-hover">
-                        <div class="portfolio-content">
-                           <h3><a href="assets/img/projects/03.jpg" class="gallery"><i class="fa fa-plus"></i> image name </a></h3>
-                        </div>
-                     </div>
-                  </div>
-			   </div>
-               <div class="col-xl-4">
-				  <div class="single-portfolio">
-                     <img src="assets/img/projects/04.jpg" alt="">
-                     <div class="portfolio-hover">
-                        <div class="portfolio-content">
-                           <h3><a href="assets/img/projects/04.jpg" class="gallery"><i class="fa fa-plus"></i> image name </a></h3>
-                        </div>
-                     </div>
-                  </div>
-			   </div>
-               <div class="col-xl-4">
-				  <div class="single-portfolio">
-                     <img src="assets/img/projects/05.jpg" alt="">
-                     <div class="portfolio-hover">
-                        <div class="portfolio-content">
-                           <h3><a href="assets/img/projects/05.jpg" class="gallery"><i class="fa fa-plus"></i> image name </a></h3>
-                        </div>
-                     </div>
-                  </div>
-			   </div>
-               <div class="col-xl-4">
-				  <div class="single-portfolio">
-                     <img src="assets/img/projects/06.jpg" alt="">
-                     <div class="portfolio-hover">
-                        <div class="portfolio-content">
-                           <h3><a href="assets/img/projects/06.jpg" class="gallery"><i class="fa fa-plus"></i> image name </a></h3>
-                        </div>
-                     </div>
-                  </div>
-			   </div>
-               <div class="col-xl-4">
-				  <div class="single-portfolio">
-                     <img src="assets/img/projects/07.jpg" alt="">
-                     <div class="portfolio-hover">
-                        <div class="portfolio-content">
-                           <h3><a href="assets/img/projects/07.jpg" class="gallery"><i class="fa fa-plus"></i> image name </a></h3>
-                        </div>
-                     </div>
-                  </div>
-			   </div>
-               <div class="col-xl-4">
-				  <div class="single-portfolio">
-                     <img src="assets/img/projects/08.jpg" alt="">
-                     <div class="portfolio-hover">
-                        <div class="portfolio-content">
-                           <h3><a href="assets/img/projects/08.jpg" class="gallery"><i class="fa fa-plus"></i> image name </a></h3>
-                        </div>
-                     </div>
-                  </div>
-			   </div>
-               <div class="col-xl-4">
-				  <div class="single-portfolio">
-                     <img src="assets/img/projects/09.jpg" alt="">
-                     <div class="portfolio-hover">
-                        <div class="portfolio-content">
-                           <h3><a href="assets/img/projects/09.jpg" class="gallery"><i class="fa fa-plus"></i> image name </a></h3>
-                        </div>
-                     </div>
-                  </div>
-			   </div>
+               <?php foreach ($images as $image):?>
+                   <div class="col-xl-4">
+                       <div class="single-portfolio">
+                           <img src="<?= $image['images']; ?>" alt="">
+                           <div class="portfolio-hover">
+                               <div class="portfolio-content">
+                                   <h3><a href="<?= $image['images']; ?>" class="gallery"><i class="fa fa-plus"></i> <?= $image['name']; ?> </a></h3>
+                               </div>
+                           </div>
+                       </div>
+                   </div>
+                <?php endforeach;?>
             </div>
          </div>
       </section>

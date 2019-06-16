@@ -7,7 +7,7 @@ include 'header.php';
       <!-- Slider Area Start -->
       <section class="slider-area" id="home">
          <div class="slider owl-carousel">
-            <div class="single-slide" style="background-image:url('assets/img/slider/slide-1.jpg')">
+            <div class="single-slide" style="background-image:url('./assets/img/seed-slider-1.jpg')">
                <div class="container">
                   <div class="row">
                      <div class="col-xl-12">
@@ -23,7 +23,7 @@ include 'header.php';
                   </div>
                </div>
             </div>
-            <div class="single-slide" style="background-image:url('./assets/img/slider/slide-3.jpg')">
+            <div class="single-slide" style="background-image:url('assets/img/seed-slider-2.jpg')">
                <div class="container">
                   <div class="row">
                      <div class="col-xl-12">
@@ -104,24 +104,21 @@ include 'header.php';
                   <!-- Single Service -->
                   <div class="single-service">
                      <i class="fa fa-laptop"></i>
-                     <h4>Programs </h4>
-                     <p>PROGRAMS3D Course (Design - Project - Printing ). Cognitive Skills Improvement (Brain Exercise)</p>
+                     <h4>উন্নত মানের বীজ </h4>
                   </div>
                </div>
                <div class="col-lg-4 col-md-6">
                   <!-- Single Service -->
                   <div class="single-service">
                      <i class="fa fa-gears"></i>
-                     <h4>Courses @ center</h4>
-                     <p>COURSES @ CENTER Regular Classes – After School Hours & Weekend ClassesMonday to Friday – 10.30 am to 12.30 pm</p>
+                     <h4>সর্বোচ্চ মান সম্মত বীজ</h4>
                   </div>
                </div>
                <div class="col-lg-4 col-md-6">
                   <!-- Single Service -->
                   <div class="single-service">
                      <i class="fa fa-mobile"></i>
-                     <h4>Courses @ school</h4>
-                     <p>COURSES @ SCHOOLRobotics Club Robotics Lab</p>
+                     <h4>উচ্চ ফলনশীল বীজ</h4>
                   </div>
                </div>
             </div>

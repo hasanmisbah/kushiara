@@ -1,5 +1,3 @@
-
-
 (function ($) {
 	"use strict";
 
@@ -65,11 +63,24 @@
 
 		/* Scroll To Top
 		============================*/
-		$.scrollUp({
-			scrollText: '<span class="fa fa-long-arrow-up"></span>',
-			easingType: 'linear',
-			scrollSpeed: 900,
-			animation: 'fade'
+		// $.scrollUp({
+		// 	scrollText: '<span class="fa fa-long-arrow-up"></span>',
+		// 	easingType: 'linear',
+		// 	scrollSpeed: 900,
+		// 	animation: 'fade'
+		// });
+
+		//jpage
+		$(".holder").jPages({
+			containerID : "jpage",
+			perPage      : 9,
+			startPage    : 1,
+			startRange   : 1,
+			midRange     : 5,
+			endRange     : 1,
+			animation   : "bounceInUp",
+			next        : "Next",
+			last        : "Last"
 		});
 
 	});
