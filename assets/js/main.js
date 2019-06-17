@@ -80,7 +80,8 @@
 			endRange     : 1,
 			animation   : "bounceInUp",
 			next        : "Next",
-			last        : "Last"
+			last        : "Last",
+			//links       : "#"
 		});
 
 	});

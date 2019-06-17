@@ -7,7 +7,7 @@ include 'header.php';
       <!-- Slider Area Start -->
       <section class="slider-area" id="home">
          <div class="slider owl-carousel">
-            <div class="single-slide" style="background-image:url('./assets/img/seed-slider-1.jpg')">
+            <div class="single-slide slide-1">
                <div class="container">
                   <div class="row">
                      <div class="col-xl-12">
@@ -23,7 +23,7 @@ include 'header.php';
                   </div>
                </div>
             </div>
-            <div class="single-slide" style="background-image:url('assets/img/seed-slider-2.jpg')">
+            <div class="single-slide slide-2">
                <div class="container">
                   <div class="row">
                      <div class="col-xl-12">

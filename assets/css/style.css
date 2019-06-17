@@ -393,7 +393,6 @@ a.box-btn:hover i.fa {
 	height: 100%;
 	z-index: 2;
 	position: relative;
-	background-attachment: fixed
 }
 
 .slider-area {
@@ -1445,4 +1444,21 @@ a.navbar-brand{
 }
 .box-btn{
 	color: #ffffff !important;
+}
+.holder a{
+	cursor: pointer;
+	margin: 0 5px;
+	padding: 8px;
+	font-size: 15px;
+	color: #FF4242;
+}
+.holder a:hover{
+	color: #ffffff !important;
+	background-color: #FF4242 !important;
+}
+.single-slide.slide-1{
+	background-image:url('../img/seed-slider-1.jpg')
+}
+.single-slide.slide-2{
+	background-image:url('../img/seed-slider-2.jpg')
 }
