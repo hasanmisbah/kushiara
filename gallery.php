@@ -27,20 +27,21 @@ $images = $data['gallery'];
          <div class="container">
             <div class="row section-title white-section">
                <div class="col-md-6 text-right">
-                  <h3><span>latest photo/videos</span> gallery</h3>
+                  <h3><span>ছবি গ্যালারী</span> কুশিয়ারা সীডস</h3>
                </div>
                <div class="col-md-6">
-                  <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry typesetting industry.d </p>
+                  <p>ফ্রান্সের বিশ্ববিখ্যাত Technisem কোম্পানির এক্সক্লোসিভ ডিস্ট্রিবিউটর। এছাড়া পৃথিবীর বিভিন্ন
+                        নামকরা কোম্পানি হতে বীজ আমদানী করে থাকে। </p>
                </div>
             </div>
             <div class="row">
                <?php foreach ($images as $image):?>
                    <div class="col-xl-4">
                        <div class="single-portfolio">
-                           <img src="<?= $image['images']; ?>" alt="">
+                           <img src="./assets/img/gallery/<?= $image['images']; ?>" alt="">
                            <div class="portfolio-hover">
                                <div class="portfolio-content">
-                                   <h3><a href="<?= $image['images']; ?>" class="gallery"><i class="fa fa-plus"></i> <?= $image['name']; ?> </a></h3>
+                                   <h3><a href="./assets/img/gallery/<?= $image['images']; ?>" class="gallery"><i class="fa fa-plus"></i> <?= $image['name']; ?> </a></h3>
                                </div>
                            </div>
                        </div>

@@ -40,7 +40,7 @@ include('header.php');
                         <div class="col-xl-4 col-md-4 mb-4">
                             <div class="card">
                                 <img class="card-img img-fluid"
-                                     src="<?= $product['images']?>"
+                                     src="./assets/img/products/<?= $product['images']?>"
                                      alt="Vans">
                                 <div class="card-body">
                                     <h4 class="card-title text-center"><?= $product['name'] ?></h4>
