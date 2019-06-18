@@ -44,6 +44,8 @@
                            <li class=""><a href="about.php">About Us</a></li>
                            <li><a href="product.php">Products</a></li>
                            <li><a href="gallery.php">Gallery</a></li>
+                           <li><a href="programs.php">Programs</a></li>
+                           <li><a href="dealers.php">Dealer</a></li>
                            <li><a href="contact.php">Contact Us</a></li>
                         </ul>
                      </div>
